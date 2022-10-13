@@ -1,0 +1,71 @@
+.hats ul {
+  background-color: var(--color-white);
+  list-style: none;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.firstlogo {
+  color: var(--color-blue);
+}
+
+.secondlogo {
+  color: var(--second-black-text);
+}
+
+a.link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--second-black-text);
+}
+
+.contact-data a {
+  color: var(--general-gray-text);
+}
+
+.hats a:hover,
+.hats a:focus {
+  color: var(--color-blue);
+}
+.link:active {
+  color: var(--color-blue);
+}
+
+footer {
+  background-color: var(--color-footer);
+}
+
+.logofooter {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+
+  letter-spacing: 0.03em;
+}
+
+.thirdlogo {
+  color: var(--color-blue);
+}
+
+.fourthlogo {
+  color: var(--color-white);
+}
+
+.footaddress {
+  color: var(--color-white);
+}
+.footaddress > a {
+  color: rgba(255, 255, 255, 0.6);
+}

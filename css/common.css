@@ -1,10 +1,8 @@
 :root {
-    --general-gray-text: #757575;
-    --second-black-text: #212121;
-    --color-white: #FFFFFF;
-    --color-blue: #2196F3;
-}
-.page-navi {
-    background-color: var(--color-white); 
-    
+  --general-gray-text: #757575;
+  --second-black-text: #212121;
+  --color-white: #ffffff;
+  --color-blue: #2196f3;
+  --color-footer: #2f303a;
+  --color-address: rgba(255, 255, 255, 0.6);
 }
