@@ -1,48 +1,65 @@
-.hats ul {
+.hat {
+  width: 1600px;
+  height: 150px;
   background-color: var(--color-white);
+}
+.hat ul {
   list-style: none;
 }
 
-.logo {
+.hat-logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
 }
-
 .firstlogo {
   color: var(--color-blue);
 }
-
 .secondlogo {
   color: var(--second-black-text);
 }
 
-a.link {
+.link-navi a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+
+  text-decoration: none;
   letter-spacing: 0.02em;
   color: var(--second-black-text);
 }
 
-.contact-data a {
+.hat-contact a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-decoration: none;
+  letter-spacing: 0.02em;
   color: var(--general-gray-text);
 }
 
-.hats a:hover,
-.hats a:focus {
-  color: var(--color-blue);
-}
-.link:active {
+.hat a:hover,
+.hat a:focus {
   color: var(--color-blue);
 }
 
-footer {
+.section-footer {
+  width: 1600px;
+  height: 252px;
   background-color: var(--color-footer);
+}
+
+.section-footer a {
+  text-decoration: none;
 }
 
 .logofooter {
@@ -51,7 +68,6 @@ footer {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-
   letter-spacing: 0.03em;
 }
 
@@ -63,9 +79,44 @@ footer {
   color: var(--color-white);
 }
 
-.footaddress {
+.footaddress .cont {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footaddress .maps {
   color: var(--color-white);
 }
-.footaddress > a {
-  color: rgba(255, 255, 255, 0.6);
+.hero {
+  background-color: var(--color-footer);
+  width: 1600px;
+  height: 600px;
+}
+
+.hero-phrase {
+  width: 696px;
+  height: 120px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+}
+
+.button-hero {
+  width: 152px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--color-white);
+  background-color: var(--color-blue);
 }
