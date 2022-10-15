@@ -1,17 +1,22 @@
-/* шапка сторінки */
-
-.hat {
-  width: 1600px;
-  height: 150px;
-  background-color: var(--color-white);
-  border: 1px solid #ececec;
-  display: flex;
-  flex-direction: row;
+/* для body */
+body ul {
+  list-style: none;
 }
 
-a {
-  list-style: none;
+body a {
   text-decoration: none;
+}
+/* шапка\хедер */
+.hat {
+  width: 1600px;
+  height: 80px;
+  background-color: var(--color-white);
+  border: 1px solid #ececec;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Логотип */
@@ -23,6 +28,10 @@ a {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 .firstlogo {
   color: var(--color-blue);
@@ -33,6 +42,19 @@ a {
 
 /* навігація */
 
+.hat-navi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-basis: 50%;
+  justify-content: space-around;
+}
+
+.link-navi {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
 .link-navi a {
   font-family: "Roboto";
   font-style: normal;
@@ -40,14 +62,21 @@ a {
   font-size: 14px;
   line-height: 16px;
 
+  justify-content: space-around;
   display: flex;
+  flex-grow: 25%;
   flex-direction: row;
-
   letter-spacing: 0.02em;
   color: var(--second-black-text);
 }
 /* контакти шапки */
+.hat-contact {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
 .hat-contact a {
+  padding-left: 50px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -68,6 +97,9 @@ a {
   height: 252px;
   background-color: var(--color-footer);
 }
+.addressposition {
+  padding: 60px 1154px 60px 215px;
+}
 /* логотип футер */
 .logofooter {
   font-family: "Raleway";
@@ -86,6 +118,16 @@ a {
   color: var(--color-white);
 }
 /* футер адреса */
+.footaddress {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 20px;
+  width: 231px;
+  height: 81px;
+  display: flex;
+  flex-direction: column;
+}
 .footaddress .cont {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -202,6 +244,8 @@ a {
   line-height: 42px;
   letter-spacing: 0.03em;
   text-align: center;
+
+  color: var(--second-black-text);
 }
 /* команда */
 .team {
@@ -232,4 +276,47 @@ a {
   justify-content: space-between;
   display: flex;
   width: 1170px;
+}
+
+.team li {
+  height: 368px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.team h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  padding-bottom: 30px;
+  letter-spacing: 0.03em;
+  color: var(--general-gray-text);
+}
+/* portfolio body */
+
+.filters {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--second-black-text);
 }
