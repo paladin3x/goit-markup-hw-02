@@ -1,4 +1,9 @@
 /* для body */
+body {
+  background-color: var(--color-white);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
 body ul {
   list-style: none;
 }
@@ -12,7 +17,7 @@ body a {
   height: 80px;
   background-color: var(--color-white);
   border: 1px solid #ececec;
-
+  border-right-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,11 +28,9 @@ body a {
 
 .hat-logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: 1.2;
 
   flex-grow: 1;
   display: flex;
@@ -51,23 +54,22 @@ body a {
 }
 
 .link-navi {
+  font-style: inherit;
   display: flex;
   flex-grow: 1;
   justify-content: space-evenly;
-}
-.link-navi a {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 
-  justify-content: space-around;
-  display: flex;
-  flex-grow: 25%;
-  flex-direction: row;
   letter-spacing: 0.02em;
+}
+.link-navi a {
   color: var(--second-black-text);
+}
+
+.link-navi .link.current {
+  color: var(--color-blue);
 }
 /* контакти шапки */
 .hat-contact {
@@ -77,11 +79,9 @@ body a {
 }
 .hat-contact a {
   padding-left: 50px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 
   letter-spacing: 0.02em;
   color: var(--general-gray-text);
@@ -103,11 +103,9 @@ body a {
 /* логотип футер */
 .logofooter {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
 }
 
 .thirdlogo {
@@ -119,12 +117,10 @@ body a {
 }
 /* футер адреса */
 .footaddress {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  margin-top: 20px;
   width: 231px;
   height: 81px;
+
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -133,6 +129,8 @@ body a {
 }
 
 .footaddress .maps {
+  font-size: 14px;
+  line-height: 1.74;
   color: var(--color-white);
 }
 /* секція герой */
@@ -146,11 +144,10 @@ body a {
 .hero-phrase {
   width: 696px;
   height: 120px;
-  font-family: "Roboto";
-  font-style: normal;
+
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
 
   padding: 200px 452px 30px 452px;
   text-align: center;
@@ -164,11 +161,10 @@ body a {
   width: 216px;
   height: 50px;
 
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
 
   margin: 0 692px 200px 692px;
   justify-content: center;
@@ -196,12 +192,9 @@ body a {
   justify-content: space-between;
 }
 .fact {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
 
   color: var(--second-black-text);
@@ -209,12 +202,9 @@ body a {
 
 .descr {
   width: 270px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
 
   padding-top: 10px;
 
@@ -237,11 +227,9 @@ body a {
   justify-content: space-between;
 }
 .work > h2 {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
 
@@ -251,73 +239,72 @@ body a {
 .team {
   width: 1600px;
   height: 648px;
-  background-color: #f5f4fa;
+
   text-align: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  background-color: #f5f4fa;
 }
 
 .team > h2 {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-black-text);
+
   padding-top: 94px;
   padding-bottom: 50px;
+
+  color: var(--second-black-text);
 }
 
 .team ul {
-  list-style: none;
-  justify-content: space-between;
-  display: flex;
   width: 1170px;
+
+  justify-content: space-between;
+
+  display: flex;
 }
 
 .team li {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
   height: 368px;
-  background-color: var(--color-white);
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  background-color: var(--color-white);
 }
 .team h3 {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
 
   padding-top: 30px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .team p {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   padding-bottom: 30px;
-  letter-spacing: 0.03em;
   color: var(--general-gray-text);
 }
 /* portfolio body */
 
 .filters {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.625;
 
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--second-black-text);
 }
