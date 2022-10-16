@@ -1,3 +1,11 @@
+:root {
+  --general-gray-text: #757575;
+  --second-black-text: #212121;
+  --color-white: #ffffff;
+  --color-blue: #2196f3;
+  --color-footer: #2f303a;
+}
+
 /* для body */
 body {
   background-color: var(--color-white);
@@ -128,6 +136,9 @@ ul {
   flex-direction: column;
 }
 .cont {
+  font-size: 14px;
+  line-height: 1.71;
+
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -212,9 +223,8 @@ ul {
 
 .descr {
   width: 270px;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
 
   padding-top: 10px;
 
