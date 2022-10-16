@@ -4,13 +4,10 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-body ul {
+ul {
   list-style: none;
 }
 
-body a {
-  text-decoration: none;
-}
 /* шапка\хедер */
 .hat {
   width: 1600px;
@@ -27,6 +24,7 @@ body a {
 /* Логотип */
 
 .hat-logo {
+  text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -54,6 +52,7 @@ body a {
 }
 
 .link-navi {
+  text-decoration: none;
   font-style: inherit;
   display: flex;
   flex-grow: 1;
@@ -65,6 +64,7 @@ body a {
   letter-spacing: 0.02em;
 }
 .link-navi a {
+  text-decoration: none;
   color: var(--second-black-text);
 }
 
@@ -78,6 +78,7 @@ body a {
   justify-content: center;
 }
 .hat-contact a {
+  text-decoration: none;
   padding-left: 50px;
   font-weight: 500;
   font-size: 14px;
@@ -102,6 +103,7 @@ body a {
 }
 /* логотип футер */
 .logofooter {
+  text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -117,6 +119,7 @@ body a {
 }
 /* футер адреса */
 .footaddress {
+  text-decoration: none;
   width: 231px;
   height: 81px;
 
@@ -124,11 +127,17 @@ body a {
   display: flex;
   flex-direction: column;
 }
-.footaddress .cont {
+.cont {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+.cont:hover,
+.cont:focus {
+  color: var(--color-blue);
 }
 
 .footaddress .maps {
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.74;
   color: var(--color-white);
@@ -165,7 +174,7 @@ body a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-
+  cursor: pointer;
   margin: 0 692px 200px 692px;
   justify-content: center;
   display: flex;
@@ -179,10 +188,11 @@ body a {
   border-radius: 4px;
 }
 /* секція факти */
-.quality h2 {
+.invisible {
   position: absolute;
   opacity: 0;
 }
+
 .quality ul {
   width: 1170px;
   margin: 94px 215px;
@@ -299,12 +309,52 @@ body a {
 }
 /* portfolio body */
 
-.filters {
+.btn-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-filter {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
 
+  border-radius: 4px;
   text-align: center;
+  cursor: pointer;
+  color: var(--second-black-text);
+  padding: 6px 22px;
+}
+.btn-filter:hover,
+.btn-filter:focus {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.product a {
+  text-decoration: none;
+}
+.product li {
+  border: 1px solid #eeeeee;
+  height: 404px;
+  width: 370px;
+  background-color: var(--color-white);
+}
+
+.product h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
 
   color: var(--second-black-text);
+}
+.product p {
+  font-size: 16px;
+  line-height: 1.875;
+
+  color: var(--general-gray-text);
 }
